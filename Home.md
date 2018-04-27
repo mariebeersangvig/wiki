@@ -13,6 +13,7 @@ Before adding a new page, check if there is a page that covers the subject alrea
 ## Patterns
 - [[Globals]]
 - [[Raw Input]]
+- [[Unmodified Dataset as Output]]
 
 ## Integrating with
 - [[BankID]]
