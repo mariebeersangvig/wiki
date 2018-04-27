@@ -8,6 +8,7 @@ Before adding a new page, check if there is a page that covers the subject alrea
 
 ## Best practices
 - [[TDD]]
+- [[CircuitBreaker]]
 
 ## Patterns
 - [[Globals]]
