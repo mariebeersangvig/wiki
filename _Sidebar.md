@@ -4,10 +4,11 @@
 ## Workflow
 - [[TDD]]
 
-## Integrations
+## How-tos
 - [[BankID]]
 
-## External links
+## Help
+- [Stack Overflow](https://stackoverflow.com/questions/tagged/sesam)
 - [Official Docs](https://docs.sesam.io)
 - [Sesam Community](https://github.com/sesam-community/)
 - [Extension Browser](https://sesam-community.firebaseapp.com/)
