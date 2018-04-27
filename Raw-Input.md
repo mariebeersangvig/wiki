@@ -5,6 +5,7 @@ When reading data into Sesam you can keep the data as is (raw input) or you coul
 ## Benefits
 - Much easier to re-use the data
 - No decisions has to be made before you import
+- Import once and never touch it again
 
 ## Drawbacks
-- Increased storage use
+- Increased storage use if you don't need all the data
