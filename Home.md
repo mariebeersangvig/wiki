@@ -14,3 +14,4 @@ Before adding a new page, check if there is a page that covers the subject alrea
 
 ## Integrating with
 - [[BankID]]
+- [[Firebase]]
