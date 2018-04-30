@@ -9,7 +9,8 @@ Before adding a new page, check if there is a page that covers the subject alrea
 ## Best practices
 - [[TDD]]
 - [[Circuit Breakers]]
-- [[Continuous Integration]]
+- [Continuous Integration](https://github.com/sesam-community/wiki/wiki/Continuous-Intergration)
+
 
 ## Patterns
 - [[Globals]]
