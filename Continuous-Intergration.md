@@ -47,7 +47,7 @@ To give the CI-service instructions on how to run sesam you need to create a fil
 
 script: cd node/ && ../sesam -version && ../sesam -vv test”" 
 
-The first line tells the service where to get the sesam-client [Sesam CLI](https://github.com/sesam-io/sesam), and to install the latest version, the second line runs sesam-client from the default install folder with the option -vv (which is very verbose), root, so you should point this to the correct location. If you stand in node like we do in the example above, typically you have to move one level up to reach root. This can vary depending on how it looks in your repository. 
+The first line tells the service where to get the [sesam-client](https://github.com/sesam-io/sesam), and to install the latest version, the second line runs sesam-client from the default install folder with the option -vv (which is very verbose), root, so you should point this to the correct location. If you stand in node like we do in the example above, typically you have to move one level up to reach root. This can vary depending on how it looks in your repository. 
 
 Locally, in your ./node folder you will have to create a new folder called “expected” where the expected output from the test will be placed. 
 
