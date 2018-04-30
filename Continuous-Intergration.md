@@ -4,7 +4,7 @@ We will be using Travis CI as an example, but the principles should be applicabl
 
 Prerequisites:
 
-* One dedicated CI Node in Sesam cloud. This can be set up from portal.sesam.io 
+* One dedicated CI-node in Sesam cloud. This can be set up from portal.sesam.io 
 
 * The subscription small will be enough for most use-cases. 
 
@@ -19,6 +19,10 @@ This is done under Subscription -> JWT and fill in the fields. We usually name t
 In your original Sesam-config you will want to set up the pump to not run when the config is in test mode. This can be achieved by setting "mode" on the pump of outgoing pipes, like this:
 
 `"pump": {
-"mode": "$ENV(pump-mode)"}`
+"mode": "$ENV(pump-mode)", "schedule_interval": 30}`
 
 This can be set in addition to whatever was there before, a scheduled run for example. 
+
+With this setup you will have to set the environment variable "pump-mode" to "manual" on your CI-node and "prod" in your production environment.
+
+[IMAGE]
