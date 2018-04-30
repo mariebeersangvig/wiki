@@ -8,7 +8,7 @@ Prerequisites:
 
 * The subscription small will be enough for most use-cases. 
 
-* A Github repository with your Sesam configuration, connected to Travis. Can be done from travis-ci.com/org depending on whether the project is open-source or closed-source,”.com” for closed-source, also called “Travis Pro”, isn’t free. 
+* A Github repository with your Sesam configuration, connected to your CI-service. Can usually be done depending on whether the project is open-source or closed-source. For example travis-ci.org, is open-source, and free whilst travis-ci.com is closed-source, also called “Travis Pro”, and isn’t free. 
 
 [IMAGE?!]
 
@@ -18,12 +18,7 @@ This is done under Subscription -> JWT and fill in the fields. We usually name t
 
 In your original Sesam-config you will want to set up the pump to not run when the config is in test mode. This can be achieved by setting "mode" on the pump of outgoing pipes, like this:
 
-`{`
-	`"pump": {`
-	`"mode": "$ENV(pump-mode)",`
-	`"schedule_interval": 30`
-	`}`
-`}`
+`{"pump": {"mode": "$ENV(pump-mode)","schedule_interval": 30}}`
 
 This can be set in addition to whatever was there before, a scheduled run for example. 
 
