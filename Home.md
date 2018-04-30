@@ -9,7 +9,7 @@ Before adding a new page, check if there is a page that covers the subject alrea
 ## Best practices
 - [[TDD]]
 - [[Circuit Breakers]]
-- [[Continous Integration]]
+- [[Continuous Integration]]
 
 ## Patterns
 - [[Globals]]
