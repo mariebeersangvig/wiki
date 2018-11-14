@@ -1,8 +1,8 @@
 # Setting up dockerhub so that you can host your microservices written for sesam.
 ## Under construction
-## Docker 
+### Docker 
 
-## Github
+### Github
 
-## CI
+### CI
 
