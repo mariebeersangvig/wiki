@@ -2,8 +2,8 @@
 ![<sesam logo](https://github.com/simenjorgensen/training/blob/master/sesamlogo.png)
 ***
 # Table of contents 
-#### [1 Introduction](https://github.com/simenjorgensen/training/wiki/Home#1-Introduction-1)
-#### [2 Glossary](https://github.com/simenjorgensen/training/wiki/Home#2-Glossary-1)
+#### [1 Introduction](https://github.com/sesam-community/wiki/wiki/Getting-started#1-Introduction-1)
+#### [2 Glossary](https://github.com/sesam-community/wiki/wiki/Getting-started#2-Glossary-1)
 #### [3 Prerequisite for Installation](https://github.com/simenjorgensen/training/wiki/Home#3-Prerequisite-for-Installation-1)
 #### [4 Setting up our Sesam node](https://github.com/simenjorgensen/training/wiki/Home#4-Setting-up-our-Sesam-node-1)
 - [4.1 Sign up](https://github.com/simenjorgensen/training/wiki#41-sign-up)
