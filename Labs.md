@@ -73,7 +73,7 @@ Scope: Enhancing the quality of data
 Scope : Publishing data to CSV-endpoint
 
 * Create new pipe. Source from lab 6. Add transform and sink.​
-* Look [here](https://github.com/simenjorgensen/training/wiki#csv-sink) for help
+* Look [here](https://github.com/sesam-community/wiki/wiki/Getting-started#71-csv-endpoint-sink) for help
 
 ***
 ​
