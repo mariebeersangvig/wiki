@@ -117,7 +117,7 @@ If you want to jump straight into Sesam and get hands-on, you can go right to [l
 
 We have now made our first pipe! Feel free to browse the different tabs of this pipe and explore. We can always find the pipe in the pipe list of our **Pipes** view.
 
-If you click **Start** on the pipe it will run with the config you have created. After this you can find all the resulting entities in the **Output** tab of the pipe.
+If you click **Start** on the pipe it will run with the config you have created. After this you can find all the resulting entities in the **Output** tab of the pipe. 
 ***
 
 # 6 Basic functions
@@ -803,7 +803,6 @@ Because our dataset does not have an ```"_id"``` property we need to add that. W
 	["apply", "create-entity", "_S.orders"]
 ```
 This creates a new rule where we can add the ```"_id"```. Since the "id" in the microservice is an integer and Sesam only accepts string values for the ```"_id"``` we convert it with the ```"[string]"``` function.
-
 
 <img src="https://github.com/simenjorgensen/training/blob/master/pipe-orders-ms.PNG" height="400" width="650"> 
 
