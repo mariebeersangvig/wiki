@@ -15,30 +15,30 @@
 - [6.3 Merge](https://github.com/sesam-community/wiki/wiki/Getting-started#63-merge)
 - [6.3.1 Merging sources](https://github.com/sesam-community/wiki/wiki/Getting-started#631-merging-sources)
 - [6.3.1.1 Global datasets](https://github.com/sesam-community/wiki/wiki/Getting-started#6311-global-datasets)
-- [6.3.1.2 Namespace identifiers](https://github.com/simenjorgensen/training/wiki#6312-Namespace-identifiers)
-- [6.3.1.3 Labs 3](https://github.com/simenjorgensen/training/wiki#6313-labs-3)
-- [6.3.2 Merging with DTL](https://github.com/simenjorgensen/training/wiki#632-merging-with-dtl)
-- [6.4 Hops](https://github.com/simenjorgensen/training/wiki/Home#64-hops)
-- [6.4.1 Labs 4](https://github.com/simenjorgensen/training/wiki#641-labs-4)
-- [6.5 Apply-hops](https://github.com/simenjorgensen/training/wiki/Home#65-apply-hops)
-- [6.5.1 Labs 5](https://github.com/simenjorgensen/training/wiki#6.51-labs-5)
-- [6.5.2 Add or merge apply-hops?](https://github.com/simenjorgensen/training/wiki#652-should-i-add-or-merge-an-apply-hops)
-- [6.6 Labs 6](https://github.com/simenjorgensen/training/wiki#66-labs-6)
-#### [7 Sinks](https://github.com/simenjorgensen/training/wiki/Home#sinks-1)
-- [7.1 CSV endpoint sink](https://github.com/simenjorgensen/training/wiki/Home#71-CSV-endpoint-sink)
-- [7.2 Lab 7](https://github.com/simenjorgensen/training/wiki#72-lab-7)
-- [7.3 SQL database to CSV file output step by step](https://github.com/simenjorgensen/training/wiki#73-SQL-database-to-CSV-file-output-step-by-step)
-- [7.3.1 Using secrets](https://github.com/simenjorgensen/training/wiki#731-using-secrets)
-- [7.3.2 Creating a table in the database](https://github.com/simenjorgensen/training/wiki#732-creating-a-table-in-the-database)
-- [7.3.3 Creating our CSV sink](https://github.com/simenjorgensen/training/wiki#733-creating-our-csv-sink)
-- [7.4 SQL sink example configuration](https://github.com/simenjorgensen/training/wiki#74-sql-sink-example-configuration)
-#### [8. Microservices](https://github.com/simenjorgensen/training/wiki/Home#8-microservices-1)
-- [8.1 Workflow](https://github.com/simenjorgensen/training/wiki/Home#81-workflow)
-- [8.2 Getting started with microservices](https://github.com/simenjorgensen/training/wiki/Home#82-getting-started-with-microservices)
-- [8.2.1 Setting up](https://github.com/simenjorgensen/training/wiki/Home#821-setting-up)
-- [8.2.2 Testing](https://github.com/simenjorgensen/training/wiki/Home#822-testing)
-- [8.2.3 Push to Dockerhub](https://github.com/simenjorgensen/training/wiki/Home#823-push-to-dockerhub)
-- [8.2.4 Import to Sesam node](https://github.com/simenjorgensen/training/wiki/Home#824-import-to-sesam-node)
+- [6.3.1.2 Namespace identifiers](https://github.com/sesam-community/wiki/wiki/Getting-started#6312-Namespace-identifiers)
+- [6.3.1.3 Labs 3](https://github.com/sesam-community/wiki/wiki/Getting-started#6313-labs-3)
+- [6.3.2 Merging with DTL](https://github.com/sesam-community/wiki/wiki/Getting-started#632-merging-with-dtl)
+- [6.4 Hops](https://github.com/sesam-community/wiki/wiki/Getting-started#64-hops)
+- [6.4.1 Labs 4](https://github.com/sesam-community/wiki/wiki/Getting-started#641-labs-4)
+- [6.5 Apply-hops](https://github.com/sesam-community/wiki/wiki/Getting-started#65-apply-hops)
+- [6.5.1 Labs 5](https://github.com/sesam-community/wiki/wiki/Getting-started#6.51-labs-5)
+- [6.5.2 Add or merge apply-hops?](https://github.com/sesam-community/wiki/wiki/Getting-started#652-should-i-add-or-merge-an-apply-hops)
+- [6.6 Labs 6](https://github.com/sesam-community/wiki/wiki/Getting-started#66-labs-6)
+#### [7 Sinks](https://github.com/sesam-community/wiki/wiki/Getting-started#sinks-1)
+- [7.1 CSV endpoint sink](https://github.com/sesam-community/wiki/wiki/Getting-started#71-CSV-endpoint-sink)
+- [7.2 Lab 7](https://github.com/sesam-community/wiki/wiki/Getting-started#72-lab-7)
+- [7.3 SQL database to CSV file output step by step](https://github.com/sesam-community/wiki/wiki/Getting-started#73-SQL-database-to-CSV-file-output-step-by-step)
+- [7.3.1 Using secrets](https://github.com/sesam-community/wiki/wiki/Getting-started#731-using-secrets)
+- [7.3.2 Creating a table in the database](https://github.com/sesam-community/wiki/wiki/Getting-started#732-creating-a-table-in-the-database)
+- [7.3.3 Creating our CSV sink](https://github.com/sesam-community/wiki/wiki/Getting-started#733-creating-our-csv-sink)
+- [7.4 SQL sink example configuration](https://github.com/sesam-community/wiki/wiki/Getting-started#74-sql-sink-example-configuration)
+#### [8. Microservices](https://github.com/sesam-community/wiki/wiki/Getting-started#8-microservices-1)
+- [8.1 Workflow](https://github.com/sesam-community/wiki/wiki/Getting-started#81-workflow)
+- [8.2 Getting started with microservices](https://github.com/sesam-community/wiki/wiki/Getting-started#82-getting-started-with-microservices)
+- [8.2.1 Setting up](https://github.com/sesam-community/wiki/wiki/Getting-started#821-setting-up)
+- [8.2.2 Testing](https://github.com/sesam-community/wiki/wiki/Getting-started#822-testing)
+- [8.2.3 Push to Dockerhub](https://github.com/sesam-community/wiki/wiki/Getting-started#823-push-to-dockerhub)
+- [8.2.4 Import to Sesam node](https://github.com/sesam-community/wiki/wiki/Getting-started#824-import-to-sesam-node)
 
 ***
 # 1 Introduction
@@ -46,7 +46,7 @@ Welcome to this introduction to Sesam! This is a basic course that will guide yo
 
 Sesam is an Integration Platform that uses a unique Datahub approach for collection, connecting and sharing of data. The platform is optimized for collecting or receiving data from source systems, transforming data and pushing or providing data to target systems.
 
-If you want to jump straight into Sesam and get hands-on, you can go right to [labs page](https://github.com/simenjorgensen/training/wiki/Labs) page and try them out. If you feel like you need some information before getting started you're on the right page. We'll link you to the labs as we go along learning Sesam.
+If you want to jump straight into Sesam and get hands-on, you can go right to [labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs) page and try them out. If you feel like you need some information before getting started you're on the right page. We'll link you to the labs as we go along learning Sesam.
 ***
 # 2 Glossary
 **Datasets:** Sesam stores its data as datasets that consist of entities. Datasets are used as sources for data transformation and stored as new datasets and sources for delivering data to target systems (endpoints).\
@@ -155,7 +155,7 @@ Here we have the same system setup as before, but we have added some functions i
 Notice the ```"_S.[property1]"``` and ```"_T.[property2]"```. The ```_S``` and ```_T``` are called variables and refer to the source and the target respectively. 
 ***
 ## 6.2 Check out the Lab
-The [Labs page](https://github.com/simenjorgensen/training/wiki/Labs) hepls us get more hands on with Sesam. Head over there and do the first two labs to get more experience transforming data.
+The [Labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs) hepls us get more hands on with Sesam. Head over there and do the first two labs to get more experience transforming data.
 ***
 ## 6.3 Merge
 
@@ -239,7 +239,7 @@ Now, you have unique namespace identifiers based on SSN, which you can refer to 
 ```
 
 #### 6.3.1.3 Labs 3
-Go to the [Labs page](https://github.com/simenjorgensen/training/wiki/Labs#lab-3) and do Lab 3.
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs#lab-3) and do Lab 3.
 ***
 ### 6.3.2 Merging with DTL
 
@@ -280,7 +280,7 @@ We will later see the use of the ```["merge"]``` function in combination with fu
 In this transform we first copy everything from the source dataset into the target. To do a ```["hops"]``` you first add a new property to the target dataset. Then, inside that ```["add"]``` you call on the ```["hops"]``` function to fetch entities from the specified dataset (```"global-orders"```). 
 
 ### 6.4.1 Labs 4
-Go to the [Labs page](https://github.com/simenjorgensen/training/wiki/Labs#lab-4) and do Lab 4.
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs#lab-4) and do Lab 4.
 
 ## 6.5 Apply-hops
 
@@ -308,7 +308,7 @@ There is also the function ```["apply-hops"]``` which is a combined ```["apply"]
 This will retrieve orders through the hops expression and then add them using the order transformation rule. The output is a dataset where the ID of all orders are added to the customers from the source dataset.
 
 ### 6.5.1 Lab 5
-Go to the [Labs page](https://github.com/simenjorgensen/training/wiki/Labs#lab-5) and do Lab 5.
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs#lab-5) and do Lab 5.
 ***
 
 ### 6.5.2 Should I "add" or "merge" an apply-hops?
@@ -386,7 +386,7 @@ Results:
 ![](https://github.com/simenjorgensen/training/blob/master/merge_applyhops.png)
 
 ## 6.6 Lab 6
-Go to the [Labs page](https://github.com/simenjorgensen/training/wiki/Labs#lab-6) and do Lab 6.
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs#lab-6) and do Lab 6.
 ***
 # 7 Sinks
 Sinks are at the receiving end of pipes and are responsible for writing entities into a internal dataset or a target system.
@@ -408,7 +408,7 @@ After creating a pipe with a CSV endpoint sink you can go to the "Output" tab of
 You can also download the output by copying the cURL and creating your .csv file in a CLI like curl or Git Bash. Paste the cURL into you CLI and add " > my_file.csv" at the end. This will create the file at your current location. You can remove the entity limit and get all entities by removing "?limit=X" from the curl.
 
 ## 7.2 Lab 7
-Go to the [Labs page](https://github.com/simenjorgensen/training/wiki/Labs#lab-7) and do Lab 7.
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs#lab-7) and do Lab 7.
 ***
 ## 7.3 SQL database to CSV file output step by step 
 
