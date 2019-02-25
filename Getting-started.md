@@ -155,7 +155,7 @@ Here we have the same system setup as before, but we have added some functions i
 Notice the ```"_S.[property1]"``` and ```"_T.[property2]"```. The ```_S``` and ```_T``` are called variables and refer to the source and the target respectively. 
 ***
 ## 6.2 Check out the Lab
-The [Labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs) hepls us get more hands on with Sesam. Head over there and do the first two labs to get more experience transforming data.
+The [Labs page](https://github.com/sesam-community/wiki/wiki/Labs) hepls us get more hands on with Sesam. Head over there and do the first two labs to get more experience transforming data.
 ***
 ## 6.3 Merge
 
@@ -239,7 +239,7 @@ Now, you have unique namespace identifiers based on SSN, which you can refer to 
 ```
 
 #### 6.3.1.3 Labs 3
-Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs#lab-3) and do Lab 3.
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-3) and do Lab 3.
 ***
 ### 6.3.2 Merging with DTL
 
@@ -280,7 +280,7 @@ We will later see the use of the ```["merge"]``` function in combination with fu
 In this transform we first copy everything from the source dataset into the target. To do a ```["hops"]``` you first add a new property to the target dataset. Then, inside that ```["add"]``` you call on the ```["hops"]``` function to fetch entities from the specified dataset (```"global-orders"```). 
 
 ### 6.4.1 Labs 4
-Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs#lab-4) and do Lab 4.
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-4) and do Lab 4.
 
 ## 6.5 Apply-hops
 
@@ -308,7 +308,7 @@ There is also the function ```["apply-hops"]``` which is a combined ```["apply"]
 This will retrieve orders through the hops expression and then add them using the order transformation rule. The output is a dataset where the ID of all orders are added to the customers from the source dataset.
 
 ### 6.5.1 Lab 5
-Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs#lab-5) and do Lab 5.
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-5) and do Lab 5.
 ***
 
 ### 6.5.2 Should I "add" or "merge" an apply-hops?
@@ -386,7 +386,7 @@ Results:
 ![](https://github.com/simenjorgensen/training/blob/master/merge_applyhops.png)
 
 ## 6.6 Lab 6
-Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs#lab-6) and do Lab 6.
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-6) and do Lab 6.
 ***
 # 7 Sinks
 Sinks are at the receiving end of pipes and are responsible for writing entities into a internal dataset or a target system.
@@ -408,7 +408,7 @@ After creating a pipe with a CSV endpoint sink you can go to the "Output" tab of
 You can also download the output by copying the cURL and creating your .csv file in a CLI like curl or Git Bash. Paste the cURL into you CLI and add " > my_file.csv" at the end. This will create the file at your current location. You can remove the entity limit and get all entities by removing "?limit=X" from the curl.
 
 ## 7.2 Lab 7
-Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Getting-started/Labs#lab-7) and do Lab 7.
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-7) and do Lab 7.
 ***
 ## 7.3 SQL database to CSV file output step by step 
 
