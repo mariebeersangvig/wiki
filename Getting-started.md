@@ -701,11 +701,11 @@ Then create a new folder called service inside your project root folder.
 
 <img src="https://github.com/simenjorgensen/training/blob/master/MSproject.PNG" height="400" width="650"> 
 
-Inside the service folder create a text file called requirements.txt and the python script called "DemoMicroservice.py". Inside the requirements file paste:
+Create a text file named "requirements.txt" inside the "service" folder and paste the following text inside it:
 
 ```Flask==1.0.2```
 
-Inside the python file paste: 
+Then create a python file, also in the "service" folder, named "DemoMicroservice.py" with the following code:
 ```
 from flask import Flask, jsonify
 
