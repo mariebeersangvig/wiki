@@ -75,7 +75,7 @@ If you want to jump straight into Sesam and get hands-on, you can go right to [l
 
 ## 4.2 Import data
 
-1. The first thing you need to do is to download the Training Node - config.json file from [here](https://github.com/simenjorgensen/training) and save it locally on your computer. 
+1. The first thing you need to do is to download the Training Node - config.json file from [here](https://github.com/simenjorgensen/training/Training Node - config.json) and save it locally on your computer. 
 
 2. Go into you Dev Node. Click on **Datahub** in the left menu, and select the **Tools** tab.
 
