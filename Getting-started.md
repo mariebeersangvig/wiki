@@ -802,7 +802,7 @@ Because our dataset does not have an ```"_id"``` property we need to add that. W
 ["create",
 	["apply", "create-entity", "_S.orders"]
 ```
-This creates a new rule where we can add the ```"_id"```. Since the "id" in the microservice is an integer and Sesam only accepts string values for the ```"_id"``` we convert it with the ```"[string]"``` function.
+This creates a new rule where we can add the ```"_id"```. Since the "id" in the microservice is an integer and Sesam only accepts string values for the ```"_id"``` we convert it with the ```["string"]``` function.
 
 <img src="https://github.com/simenjorgensen/training/blob/master/pipe-orders-ms.PNG" height="400" width="650"> 
 
