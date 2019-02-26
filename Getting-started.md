@@ -732,12 +732,15 @@ orders = [
    }
 ]
 
+
 @app.route('/api/orders', methods=['GET'])
 def get_orders():
-   return jsonify({'orders': orders})
+    return jsonify({'orders': orders})
+
 
 if __name__ == '__main__':
-   app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(debug=True, host='0.0.0.0', port=5000)
+
 ```
 
 <img src="https://github.com/simenjorgensen/training/blob/master/DemoService.PNG" height="400" width="650"> 
