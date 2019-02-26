@@ -767,6 +767,8 @@ Then to check you can either go to the url in the browser or do:
 
 ```curl -v http://localhost:5000/api/orders``` in terminal
 
+To stop the container running locally you can run:
+```docker stop <container name or container id>```
 
 ### 8.2.3 Push to Dockerhub 
 
