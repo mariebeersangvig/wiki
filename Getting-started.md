@@ -88,7 +88,7 @@ If you want to jump straight into Sesam and get hands-on, you can go right to [l
   "node-env":"test"
 ```
 
-5. Select **Pipes** in the menu on the left. Select the ```crm-person``` pipe and go to the **Config** tab. Run the pipe by hitting **ctrl + Enter**. In the top right corner press **Start** then **Refresh**. It should look like the picture below. Notice that it says "Processed 10 last run" next to the **Start** button. You can also check the **Output** tab to see the entities.
+5. Select **Pipes** in the menu on the left. Select the ```crm-person``` pipe and go to the **Config** tab. Preview the pipe by hitting **ctrl + Enter**. In the top right corner press **Start** then **Refresh**. It should look like the picture below. Notice that it says "Processed 10 last run" next to the **Start** button. You can also check the **Output** tab to see the entities.
 
 ![running pipe](https://github.com/simenjorgensen/training/blob/master/running_pipe.gif)
 
