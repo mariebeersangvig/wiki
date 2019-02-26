@@ -796,7 +796,7 @@ Inside the ```"docker"``` parameter write:
 
 <img src="https://github.com/simenjorgensen/training/blob/master/systemconfigms.PNG" height="400" width="650"> 
 
-Save it and click on **Status**. Click **Pull and request**, then **Refresh** and **Check health**. You can also hit **Refresh** in the **log** so you see that it's running as it should. 
+Save it and click on **Status**. Click **Pull and restart**, then **Refresh** and **Check health**. You can also hit **Refresh** in the **log** so you see that it's running as it should. 
 
 ![](https://github.com/simenjorgensen/training/blob/master/system_microservice.gif)
 
