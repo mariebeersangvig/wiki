@@ -45,7 +45,7 @@ Scope: Merge multiple datasets in source to create a global.​
 Scope: Hops
 
 * In the same pipe that we created in lab 3 we want to 'hop' to another dataset with the ```["hops"]``` function. 
-* Add a new property called difi-data. Inside the add use ```["hops"]``` to join on the ```"zipcode"```.
+* Add a new property called difi-data. Inside the add, use ```["hops"]``` to join on the ```"zipcode"``` from azure-person OR ```"PostalCode"``` from crm-person with ```"postnummer"``` of "difi-postnummer".
 ***
 
 ## Lab 5
