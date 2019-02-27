@@ -32,7 +32,7 @@ Scope: Merge multiple datasets in source to create a global.​
 - Create New pipe. Call this pipe <your_name>-global-person.
 - Select source system: system:sesam-node.
 - Select provider type: merge prototype.​
-- List these four datasets in the source, followed by an alias:  ```"crm-person crm"```, ```"firebase-person fir"```, ```"azure-person azu"``` and ```"salesforce-userprofile"```.
+- List these four datasets in the source, with aliases:  ```"crm-person cp"```, ```"firebase-person fp"```, ```"azure-person ap"``` and ```"salesforce-userprofile sup"```.
 - Use ```["equality"]``` to merge the datasets on matching values.
 - Set ```"identity"``` to ```"first"```.
 - Set ```"version"``` to 2​.
