@@ -104,3 +104,4 @@ Below is an example of merging datasets without namespace identifiers. In this e
   }
 }
 ```
+# Lab 6
