@@ -18,9 +18,9 @@ Scope: Transforming data.
 Scope: Remove and add.
 
 * Create a new pipe.
-* Use the source that contains the property "Personalnummer".
+* Use a "person" source that contains the property "SSN".
 * Copy all the properties.
-* Remove the property "Personalnummer".
+* Remove the property "SSN".
 * By using the ```["add"]``` function, add a new property called "Birthday" by using the ```["substring"]```function.
 
 
