@@ -168,19 +168,19 @@ We can create an aggregated dataset source that contains all the data from multi
 ![Database tables showing that only entities with some identical parameter value will combine into the same entity in our merged dataset](https://github.com/simenjorgensen/training/blob/master/db%20table%20after%20merge.PNG)
 When merging datasets we need to combine entities through identical values across datasets. In the image above we merge datasets A and B through their "lastname" properties, and B and C through their "email" properties. As we can see, the resulting dataset will have "null" values in the fields that can not be populated through entities with matching values.
 
-This way you can for example combine a customer dataset with an order dataset through the ```"customer_id"``` and work with entities that contain both the customer info and that customer’s orders as seen below.
+This way you can for example, combine a customer dataset with an another customer dataset through the ```"lastname"``` and work with a entity that contains more customer info.
 ```json
   "source": {
 	"type": "merge",
-	"datasets": ["store-customer c", "store-orders o"],
+	"datasets": ["customerA  a", "customerB b"],
 	"equality": [
-  	["eq", "c.id", "o.customer_id"]
+  	["eq", "a.lastname", "b.lastname"]
 	],
 	"identity": "first",
 	"version": 2
   }
 ```
-With the ```“equality”``` property of the source we set the joining condition for the merge. The join expression ```["eq", "c.id", "o.customer_id"]``` will combine entities where the id from ```”store-customer”``` matches the ```”customer_id”```from ```"store-orders”```. Our source dataset will after the merge contain entities with data for both the customer and the orders registered to that customer.
+With the ```“equality”``` property of the source we set the joining condition for the merge. The join expression ```["eq", "a.lastname", "b.lastname"]``` will combine entities where the lastname from ```”customer A”``` matches the ```”lastname”```from ```"customer B”```. Our source dataset will after the merge contain entities with data from both the customers.
 
 The ```“identity”``` property specifies the ID of the resulting entity. Set to ```“first”``` it will use a single ID value from one dataset. This ID will be copied from the first dataset that contains one, in the order that the datasets are listed in the ```“source”``` property. Set to ```“composite”``` it will instead make a custom id composed of all the different IDs in the datasets.
 
