@@ -225,6 +225,9 @@ Now, you have unique namespace identifiers based on SSN, which you can refer whi
       ["eq", "cp.SSN-ni", "ap.$ids"],
       ["eq", "ap.SSN-ni", "fp.$ids"]
     ],
+    "identity": "first",
+    "version": 2
+  }
 ```
 
 #### 6.3.1.3 Labs 3
