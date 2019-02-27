@@ -105,3 +105,76 @@ Below is an example of merging datasets without namespace identifiers. In this e
 }
 ```
 # Lab 6
+There are multiple ways of selecting the properties we need. Below are a few examples. The methods from these can be combined :
+
+```
+{
+  "_id": "lab6-person-csv",
+  "type": "pipe",
+  "source": {
+    "type": "dataset",
+    "dataset": "lab3-global-person"
+  },
+  "transform": {
+    "type": "dtl",
+    "rules": {
+      "default": [
+        ["copy", "_id"],
+        ["copy", "crm-person:SSN"],
+        ["copy", "crm-person:EmailAddress"],
+        ["copy", "azure-person:ZipCode"],
+        ["copy", "City"]
+      ]
+    }
+  }
+}
+```
+
+```
+{
+  "_id": "lab6-person-csv",
+  "type": "pipe",
+  "source": {
+    "type": "dataset",
+    "dataset": "lab3-global-person"
+  },
+  "transform": {
+    "type": "dtl",
+    "rules": {
+      "default": [
+        ["copy", "*"],
+        ["remove", "Title"],
+        ["remove", "azure-person:Username"],
+        ["remove", "crm-person:FirstName"],
+        ["remove", "crm-person:LastName"],
+        ["remove", "firebase-person:StreetAddress"],
+        ["remove", "firebase-person:ZipCode"]
+      ]
+    }
+  }
+}
+```
+
+```
+{
+  "_id": "lab6-person-csv",
+  "type": "pipe",
+  "source": {
+    "type": "dataset",
+    "dataset": "lab3-global-person"
+  },
+  "transform": {
+    "type": "dtl",
+    "rules": {
+      "default": [
+        ["copy", "_id"],
+        ["add", "gender", "_S.azure-person:Gender"],
+        ["add", "SSN", "_S.crm-person:SSN"],
+        ["add", "FullName",
+          ["concat", "_S.FirstName", " ", "_S.LastName"]
+        ]
+      ]
+    }
+  }
+}
+``` 
