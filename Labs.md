@@ -46,7 +46,6 @@ Scope: Hops
 
 * In the same pipe that we created in lab 3 we want to 'hop' to another dataset with the ```["hops"]``` function. 
 * Add a new property called difi-data. Inside the add use ```["hops"]``` to join on the ```"zipcode"```.
-* Add the property "kommunenavn" from "difi-postnummer".
 ***
 
 ## Lab 5
