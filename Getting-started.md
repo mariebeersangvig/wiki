@@ -205,7 +205,7 @@ Example of an entity with namespaces:
   "user:manager": "~:users:101"
 }
 ```
-Namespace identifiers are recommended way for referring datasets for matching properties during transformations. Suppose, if you have three different person datasets and you want to merge on some common properties, like e-mail or SSN, then we should use namespace identifiers. The code below will add a namespace identifier, based on common SSN properties between datasets "crm-person" and "azure-person" during transformation inside DTL of "crm-person". Same way, we need to create a namespace identifier between "azure-person" and "firebase-person" datasets so that we can refer them later.
+Namespace identifiers are recommended way for referring datasets for matching properties during transformations. Suppose, if you have three different person datasets and you want to merge on some common properties, like e-mail or SSN, then we should use namespace identifiers. The code below will add a namespace identifier, based on common SSN properties between datasets "crm-person" and "azure-person" during transformation inside DTL of "crm-person". Same way, we need to create a namespace identifier between "azure-person" and "firebase-person" datasets so that we can refer them during merging.
 ```json
         ["make-ni", "azure-person", "SSN"],
 ```
@@ -213,7 +213,7 @@ This will produce the following output:
 ```
    "crm-person:SSN-ni": "~:azure-person:23072451376",
 ```
-Now, you have unique namespace identifiers based on SSN, which you can refer while merging.
+Now, you have unique namespace identifiers based on SSN, which you can refer now.
 ``` json
 {
   "_id": "global-person",
