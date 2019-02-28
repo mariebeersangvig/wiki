@@ -1,6 +1,10 @@
 ## Welcome to the lab!
+
 These tasks will make you familiar with the basics of data transformation with Sesam. We recommend keeping the [documentation](https://docs.sesam.io/DTLReferenceGuide.html) at hand to look up syntax and concepts when needed.
-​
+
+To do these labs you will need to have a Sesam node set up with the [Training Node - config.json](https://github.com/simenjorgensen/training/blob/master/Training%20Node%20-%20config.json?raw=true) configuration. If you have set up your node following the [Getting started with Sesam](https://github.com/sesam-community/wiki/wiki/Getting-started) guide you are ready to do these lab. If you need help with solving these labs, look for clues in the existing pipes in your node.
+
+Good luck and have fun! 
 ***
 
 ## Lab 1
