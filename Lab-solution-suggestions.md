@@ -74,9 +74,9 @@ These are our suggestions for solutions to the tasks at the [Labs-page](https://
 }
 ```
 
-Above is our preferred way of solving Lab 3, but you can also do this without using the SSN namespace identifier. You can match on any properties that you know will have matching values. But there is value in using namespace identifiers as for equality checks and we recommend reading up on namespace identifiers in the [Getting started with Sesam guide](https://github.com/sesam-community/wiki/wiki/Getting-started#6312-Namespace-identifiers) or in the [documentation](https://docs.sesam.io/DTLReferenceGuide.html#namespaces).
+Above is our preferred way of solving Lab 3, but you can also do this without using the SSN namespace identifier. You can match on any properties that you know will have matching values. But there is value in using namespace identifiers for equality checks and we recommend reading up on namespace identifiers in the [Getting started with Sesam guide](https://github.com/sesam-community/wiki/wiki/Getting-started#6312-Namespace-identifiers) or in the [documentation](https://docs.sesam.io/DTLReferenceGuide.html#namespaces).
 
-Below is an example of merging datasets without namespace identifiers. In this example we remove the namespace in "firebase-person"'s "_id" to match the new substring with "SSN" in "crm-person":
+Below is an example of merging datasets without namespace identifiers. In this example we remove the namespace in firebase-person's "_id" to match the new substring with "SSN" in crm-person:
 ```
 {
   "_id": "lab3-global-person",
