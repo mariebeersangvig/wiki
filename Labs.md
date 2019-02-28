@@ -16,7 +16,7 @@ Scope: Transforming data.
 * Create a new property called ```"FullName"``` by using the functions ```["add"]``` and ```["concat"]```.
 * Run pipe and look at dataset.​
 ​
-
+_If you need a hint on how to do this, look for the ```["concat"]``` function in the "global-person" pipe._
 ***
 ## Lab 2
 Scope: Remove and add.
