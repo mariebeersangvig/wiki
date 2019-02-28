@@ -29,6 +29,7 @@ Scope: Remove and add.
 * By using the ```["add"]``` function, add a new property called "Birthday" by using the ```["substring"]```function.
 
 
+__Hint: Look up "remove" and "substring" in the documentation.__
 ***
 ## Lab 3
 
@@ -43,6 +44,10 @@ Scope: Merge multiple datasets in source to create a global.​
 - Set ```"version"``` to 2​.
 - Add transform​.
 - ```["copy" , "*"]```​.
+
+
+__Hint: Look at the source section of the "global-person" pipe.__
+
 ***
 
 ## Lab 4
@@ -61,17 +66,19 @@ Scope: Apply-hops
 * Add a global property "City" and "Municipality" from "difi-postnummer" by using ```["apply-hops"]```.
 * Try to use ```["apply-hops"]``` inside an ```["add"]``` and a ```["merge"]```. See any difference?
 
-***
 
+__Hint: Look at the transform section of the "global-person" pipe.__
+***
 ## Lab 6
 
 Scope: Creating global properties
 
 * In the global pipe we now want to create global properties for firstname, lastname, fullname, address, SSN, zipcode and customerid.
 * Use ```["coalesce"]``` and ```["list"]``` functions to prioritize which source you want to pick from first. 
- 
-***
 
+
+__Hint: Look at the transform section of the "global-person" pipe.__
+***
 ## Lab 7
 
 Scope: Enhancing the quality of data 
@@ -79,8 +86,9 @@ Scope: Enhancing the quality of data
 * Create new pipe, following naming conventions.
 * Copy these properties to the output dataset: CustomerId, firstname, lastname, FullName, Address, SSN, zipcode, City and Municipality. 
 
-***
 
+__Hint: Look at the transform section of the "person-crm" pipe.__
+***
 ## Lab 8
 
 Scope : Publishing data to CSV-endpoint
@@ -88,8 +96,7 @@ Scope : Publishing data to CSV-endpoint
 * Create new pipe. Source from lab 6. Add transform and sink.​
 * Look [here](https://github.com/sesam-community/wiki/wiki/Getting-started#71-csv-endpoint-sink) for help
 
-***
-​
+​__Hint: Look at the "person-crm-endpoint" pipe.__
 ***
 ## More labs
 
