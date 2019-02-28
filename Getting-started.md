@@ -341,7 +341,7 @@ In the first case we ```["add"]``` a new property called ```"difi-data"``` which
 Results:
 ![](https://github.com/simenjorgensen/training/blob/master/add_applyhops.png)
 ***
-In the second example, instead of adding the ```["apply-hops"]```, we use ```["merge"]```. This will add the "City" and "Municipality" as properties in the source. 
+In the second example, instead of adding the ```["apply-hops"]```, we use ```["merge"]```. This will add the "City" and "Municipality" as properties in the target. 
 
 ```json
 "transform": {
