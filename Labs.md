@@ -96,7 +96,7 @@ Scope : Publishing data to CSV-endpoint
 * Look [here](https://github.com/sesam-community/wiki/wiki/Getting-started#71-csv-endpoint-sink) for help
 
 
-​_Hint: Look at the "person-crm-endpoint" pipe._
+_Hint: Look at the "person-crm-endpoint" pipe._
 ***
 ## More labs
 
