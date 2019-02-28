@@ -58,21 +58,30 @@ Scope: Hops
 Scope: Apply-hops
 
 * In the same pipe that we created in lab 3 we want to 'hop' to another dataset with the ```["apply-hops"]``` function. 
-* Add the property "poststed" from "difi-postnummer" by using ```["apply-hops"]```.
+* Add a global property "City" and "Municipality" from "difi-postnummer" by using ```["apply-hops"]```.
 * Try to use ```["apply-hops"]``` inside an ```["add"]``` and a ```["merge"]```. See any difference?
 
 ***
 
 ## Lab 6
 
-Scope: Enhancing the quality of data 
+Scope: Creating global properties
 
-* Create new pipe, following naming conventions.
-* Select the properties you want in output dataset (e.g. _id, FirstName, LastName, SSN, EmailAddress, ZipCode, City). 
-
+* In the global pipe we now want to create global properties for firstname, lastname, fullname, address, SSN, zipcode and customerid.
+* Use ```["coalesce"]``` and ```["list"]``` functions to prioritize which source you want to pick from first. 
+ 
 ***
 
 ## Lab 7
+
+Scope: Enhancing the quality of data 
+
+* Create new pipe, following naming conventions.
+* Copy these properties to the output dataset: CustomerId, firstname, lastname, FullName, Address, SSN, zipcode, City and Municipality. 
+
+***
+
+## Lab 8
 
 Scope : Publishing data to CSV-endpoint
 
