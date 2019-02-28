@@ -4,13 +4,13 @@ Sesam is an [extensible platform](https://docs.sesam.io/extension-points.html), 
 
 We're looking for more editors! Please contact one of the [current editors](https://github.com/orgs/sesam-community/people) if you want to help out.
 
-Before adding a new page, check if there is a page that covers the subject already and help improve that page instead.
+## Getting started with sesam
+- [Learn to use sesam](https://github.com/sesam-community/wiki/wiki/Getting-started)
 
 ## Best practices
 - [[TDD]]
 - [[Circuit Breakers]]
 - [Continuous Integration](https://github.com/sesam-community/wiki/wiki/Continuous-Intergration)
-
 
 ## Patterns
 - [[Globals]]
