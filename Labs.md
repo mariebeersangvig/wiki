@@ -103,9 +103,9 @@ _Hint: Look at the "person-crm-endpoint" pipe._
 
 1. Create a pipe that uses "crm-person" and "firebase-person" as source. Use the ```["if"]``` function to check if the "FirstName" and the "GivenName" are equal. If so, remove "GivenName". 
 
-2. Create a pipe that use "firebase-person" as source. In the transform do an ```["apply-hops"]``` with the "crm-person". In the new rule create a new property called "Birthyear" from the "Personalnummer" by adding "19" to the year in the "Personalnummer" (i.e. using ```["substring"]```). Then add a property "age-group" and use the function ```["case"]``` to group the entities by "Birthyear" (Check solutions for help).
+2. Create a pipe that use "firebase-person" as source. In the transform do an ```["apply-hops"]``` with the "crm-person". In the new rule create a new property called "Birthyear" from the "Personalnummer" by adding "19" to the year in the "Personalnummer" (i.e. using ```["substring"]```). Then add a property "age-group" and use the function ```["case"]``` to group the entities by "Birthyear".
 
-3. Use the dataset you created in exercise 2 as source. Add "FirstName", "LastName", "Gender", "Address", "ZipCode", "Email", "Birthday", "age-group". Filter so that you only get the people in the age-group "61-80 years old".
+3. Use the dataset you created in exercise 2 as source. Add "FirstName", "LastName", "Gender", "Address", "ZipCode", "Email", "Birthday", "age-group". Filter so that you only get the people from one of the age-groups.
 
 4. Merge two datasets as source in pipe. In this exercise we don't want properties that have the same value to be shown in the output. Use ```["coalesce"]``` to do this.
 ***
