@@ -9,7 +9,7 @@
 - [4.1 Sign up](https://github.com/sesam-community/wiki/wiki/Getting-started#41-sign-up)
 - [4.2 Import data](https://github.com/sesam-community/wiki/wiki/Getting-started#42-import-data)
 #### [5 Creating our first pipe](https://github.com/sesam-community/wiki/wiki/Getting-started#5-creating-our-first-pipe-1)
-- [5.1 Naming conventions](https://github.com/sesam-community/wiki/wiki/Getting-started#51naming-conventions)
+- [5.1 Naming conventions](https://github.com/sesam-community/wiki/wiki/Getting-started#51-naming-conventions)
 #### [6 Basic functions](https://github.com/sesam-community/wiki/wiki/Getting-started#6-basic-functions-1)
 - [6.1 Transformation](https://github.com/sesam-community/wiki/wiki/Getting-started#61-transformation)
 - [6.2 Check out the Lab](https://github.com/sesam-community/wiki/wiki/Getting-started#62-check-out-the-lab)
