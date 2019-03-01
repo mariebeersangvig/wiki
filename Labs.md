@@ -101,12 +101,11 @@ _Hint: Look at the "person-crm-endpoint" pipe._
 ***
 ## More labs
 
-A. Create a pipe that uses "crm-person" and "firebase-person" as source. Use the ```["if"]``` function to check if the "FirstName" and the "GivenName" are equal. If so, remove "GivenName". 
+1. Create a pipe that uses "crm-person" and "firebase-person" as source. Use the ```["if"]``` function to check if the "FirstName" and the "GivenName" are equal. If so, remove "GivenName". 
 
-B. Create a pipe that use "firebase-person" as source. In the transform do an ```["apply-hops"]``` with the "crm-person". In the new rule create a new property called "Birthyear" from the "Personalnummer" by adding "19" to the year in the "Personalnummer" (i.e. using ```["substring"]```). Then add a property "age-group" and use the function ```["case"]``` to group the entities by "Birthyear".
+2. Create a pipe that use "firebase-person" as source. In the transform do an ```["apply-hops"]``` with the "crm-person". In the new rule create a new property called "Birthyear" from the "Personalnummer" by adding "19" to the year in the "Personalnummer" (i.e. using ```["substring"]```). Then add a property "age-group" and use the function ```["case"]``` to group the entities by "Birthyear".
 
-C. Use the dataset you created in lab B as source. Add "FirstName", "LastName", "Gender", "Address", "ZipCode", "Email", "Birthday", "age-group". Filter so that you only get the people from one of the age-groups.
+3. Use the dataset you created in the previous lab as source. Add "FirstName", "LastName", "Gender", "Address", "ZipCode", "Email", "Birthday", "age-group". Filter so that you only get the people from one of the age-groups.
 
-D. Merge two datasets as source in pipe. In this exercise we don't want properties that have the same value to be shown in the output. Use ```["coalesce"]``` to do this.
+4. Merge two datasets as source in pipe. In this exercise we don't want properties that have the same value to be shown in the output. Use ```["coalesce"]``` to do this.
 ***
-​
