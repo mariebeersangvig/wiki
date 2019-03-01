@@ -124,10 +124,14 @@ If you click **Start** on the pipe it will run with the config you have created.
 To ensure we have a structured set of pipes that stay manageable in a bigger system we need to stick to a convention when naming them. Below is our recommended way of naming pipes.
 
 Input pipe: \<name-of-source>-\<name-of-object>
-Internal pipe: global-\<name-of-object\>
-Internal pipe: <purpose>-<name-of-object>
-Outgoing pipe: <name-of-object>-<name-of-sink>
-Output pipe: <name-of-object>-<name-of-sink>-endpoint 
+
+Internal pipe: global-\<name-of-object>
+
+Internal pipe: \<purpose>-\<name-of-object>
+
+Outgoing pipe: \<name-of-object>-\<name-of-sink>
+
+Output pipe: \<name-of-object>-\<name-of-sink>-endpoint 
 ***
 
 # 6 Basic functions
