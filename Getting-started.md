@@ -9,6 +9,7 @@
 - [4.1 Sign up](https://github.com/sesam-community/wiki/wiki/Getting-started#41-sign-up)
 - [4.2 Import data](https://github.com/sesam-community/wiki/wiki/Getting-started#42-import-data)
 #### [5 Creating our first pipe](https://github.com/sesam-community/wiki/wiki/Getting-started#5-creating-our-first-pipe-1)
+- [5.1 Naming conventions](https://github.com/sesam-community/wiki/wiki/Getting-started#51naming-conventions)
 #### [6 Basic functions](https://github.com/sesam-community/wiki/wiki/Getting-started#6-basic-functions-1)
 - [6.1 Transformation](https://github.com/sesam-community/wiki/wiki/Getting-started#61-transformation)
 - [6.2 Check out the Lab](https://github.com/sesam-community/wiki/wiki/Getting-started#62-check-out-the-lab)
@@ -117,7 +118,16 @@ If you want to jump straight into Sesam and get hands-on, you can go right to [l
 
 We have now made our first pipe! Feel free to browse the different tabs of this pipe and explore. We can always find the pipe in the pipe list of our **Pipes** view.
 
-If you click **Start** on the pipe it will run with the config you have created. After this you can find all the resulting entities in the **Output** tab of the pipe. 
+If you click **Start** on the pipe it will run with the config you have created. After this you can find all the resulting entities in the **Output** tab of the pipe.
+
+## 5.1 Naming conventions
+To ensure we have a structured set of pipes that stay manageable in a bigger system we need to stick to a convention when naming them. Below is our recommended way of naming pipes.
+
+Input pipe: <name-of-source>-<name-of-object>
+Internal pipe: global-<name-of-object>
+Internal pipe: <purpose>-<name-of-object>
+Outgoing pipe: <name-of-object>-<name-of-sink>
+Output pipe: <name-of-object>-<name-of-sink>-endpoint 
 ***
 
 # 6 Basic functions
