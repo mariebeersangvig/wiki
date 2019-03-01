@@ -250,7 +250,7 @@ We will later see the use of the ```["merge"]``` function in combination with fu
 ***
 
 ## 6.4 Hops
-```["hops"]``` joins two datasets and returns the entities where the parameters we specify match.
+```["hops"]``` joins two datasets and returns the entities where the specified parameters match.
 ```json
 "transform": {​
     "type": "dtl",​
@@ -269,7 +269,7 @@ We will later see the use of the ```["merge"]``` function in combination with fu
      }
     }
 ```
-In this transform we first copy everything from the source dataset into the target. To do a ```["hops"]``` you first add a new property to the target dataset. Then, inside that ```["add"]``` you call on the ```["hops"]``` function to fetch entities from the specified dataset (```"global-orders"```). 
+In this transform we first copy everything from the source dataset into the target. To do a ```["hops"]``` you first add a new property to the target dataset. Then, inside that ```["add"]``` you call on the ```["hops"]``` function to fetch entities from the specified dataset, in this example (```"global-orders"```). 
 
 ### 6.4.1 Labs 4
 Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-4) and do Lab 4.
