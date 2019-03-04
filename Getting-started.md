@@ -82,7 +82,7 @@ If you want to jump straight into Sesam and get hands-on, you can go right to [l
 
 <img src="https://github.com/simenjorgensen/training/blob/master/importdata.png" height="290" width="650"> 
 
-3. Upload the file. Remember to check the box **"Force upload (ignore validation errors)"**.
+3. Upload the file. Check the box **"Force upload (ignore validation errors)"**.
 
 4. We have created some test data for you.  Go to **Variables** tab and paste the code below inside the curly brackets.
 ```json
