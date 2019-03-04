@@ -4,8 +4,8 @@ Sesam is an [extensible platform](https://docs.sesam.io/extension-points.html), 
 
 We're looking for more editors! Please contact one of the [current editors](https://github.com/orgs/sesam-community/people) if you want to help out.
 
-## Getting started with sesam
-- [Learn to use sesam](https://github.com/sesam-community/wiki/wiki/Getting-started)
+## Getting started with Sesam
+- [Learn to use Sesam](https://github.com/sesam-community/wiki/wiki/Getting-started)
 
 ## Best practices
 - [[TDD]]
