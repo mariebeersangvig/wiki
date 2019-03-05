@@ -215,13 +215,13 @@ Example of an entity with namespaces:
   "user:manager": "~:users:101"
 }
 ```
-Namespace identifiers are recommended way for referring datasets for matching properties during transformations. Suppose, if you have three different person datasets and you want to merge on some common properties, like e-mail or SSN, then we should use namespace identifiers. The code below will add a namespace identifier, based on common SSN properties between datasets "crm-person" and "azure-person" during transformation inside DTL of "crm-person". Same way, we need to create a namespace identifier between "azure-person" and "firebase-person" datasets so that we can refer them during merging.
+Namespace identifiers are recommended way for referring datasets for matching properties during transformations. Suppose, if you have three different person datasets and you want to merge on some common properties, like e-mail or SSN, then we should use namespace identifiers. The code below will add a namespace identifier, based on common SSN properties between datasets "crm-person" and "firebase-person" during transformation inside DTL of "crm-person". Same way, we need to create a namespace identifier between "azure-person" and "firebase-person" datasets so that we can refer them during merging.
 ```json
-        ["make-ni", "azure-person", "SSN"],
+        ["make-ni", "firebase-person", "SSN"],
 ```
 This will produce the following output:
 ```
-   "crm-person:SSN-ni": "~:azure-person:23072451376",
+   "crm-person:SSN-ni": "~:firebase-person:23072451376",
 ```
 Now, you have unique namespace identifiers based on SSN, which you can refer now.
 ``` json
@@ -232,13 +232,16 @@ Now, you have unique namespace identifiers based on SSN, which you can refer now
     "type": "merge",
     "datasets": ["crm-person cp", "azure-person ap", "firebase-person fp"],
     "equality": [
-      ["eq", "cp.SSN-ni", "ap.$ids"],
+      ["eq", "cp.SSN-ni", "fp.$ids"],
       ["eq", "ap.SSN-ni", "fp.$ids"]
     ],
     "identity": "first",
     "version": 2
   }
 ```
+
+You do not need to add the third equality. In the above code we are connecting the foreign keys, ```"SSN-ni"``` of ```"azure-person"```  and ```"crm-person"``` with the primary key, ```"$ids"```, of ```"firebase-person"```.
+ 
 
 #### 6.3.1.3 Labs 3
 Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-3) and do Lab 3.
