@@ -240,7 +240,7 @@ Now, you have unique namespace identifiers based on SSN, which you can refer now
   }
 ```
 
-You do not need to add the third equality. In the above code we are connecting the foreign keys, ```"SSN-ni"``` of ```"azure-person"```  and ```"crm-person"``` with the primary key, ```"$ids"```, of ```"firebase-person"```.
+In the above code we are connecting the foreign keys, ```"SSN-ni"``` of ```"azure-person"```  and ```"crm-person"``` with the primary key, ```"$ids"```, of ```"firebase-person"```. You do not need to add the third equality between ```"azure-person"```  and ```"crm-person"``` as it will happen automatically. 
  
 
 #### 6.3.1.3 Labs 3
