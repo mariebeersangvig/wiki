@@ -754,6 +754,8 @@ Create an image of the microservice in PyCharm's terminal window or any other CL
 
 ```docker build -t <docker_username>/<your_repository_name>:<tagname> .```
 
+
+
 To check that the you have created image run the command:
 
 ```docker images```
@@ -761,7 +763,8 @@ To check that the you have created image run the command:
 
 ### 8.2.2 Testing 
 
-To test that you can run a container from your image locally you can run it in command line/terminal.
+To test that you can run a container from your image locally you can run it in command line/terminal. First we need to login to Docker. Run the command ```docker login``` and enter your DockerHub **username** and **password** when prompted.
+
 Next we'll need to run the image to create the container. 
 
 ```docker run -p <local_port>:<container_port> <docker_username>/<your_repository_name>:<tagname>```
