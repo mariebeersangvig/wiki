@@ -33,6 +33,10 @@
 - [7.3.2 Creating a table in the database](https://github.com/sesam-community/wiki/wiki/Getting-started#732-creating-a-table-in-the-database)
 - [7.3.3 Creating our CSV sink](https://github.com/sesam-community/wiki/wiki/Getting-started#733-creating-our-csv-sink)
 - [7.4 SQL sink example configuration](https://github.com/sesam-community/wiki/wiki/Getting-started#74-sql-sink-example-configuration)
+- [7.5 HTTP-endpoint and retrieving data](https://github.com/sesam-community/wiki/wiki/Getting-started#75-http-endpoint-and-retrieving-data)
+- [7.5.1 Exposing datasets with HTTP-endpoint](https://github.com/sesam-community/wiki/wiki/Getting-started#751-exposing-datasets-with-http-endpoint)
+- [7.5.2 Fetching data](https://github.com/sesam-community/wiki/wiki/Getting-started#752-fetching-data)
+
 #### [8. Microservices](https://github.com/sesam-community/wiki/wiki/Getting-started#8-microservices-1)
 - [8.1 Workflow](https://github.com/sesam-community/wiki/wiki/Getting-started#81-workflow)
 - [8.2 Getting started with microservices](https://github.com/sesam-community/wiki/wiki/Getting-started#82-getting-started-with-microservices)
@@ -642,11 +646,11 @@ Let's look at an example:
 This sink configuration creates an SQL table containing data from the ```"db-employee"``` dataset.
 
 ***
-## 7.5 HTTP-endpoint and retrieving the data
+## 7.5 HTTP-endpoint and retrieving data
 We can expose the entities of a dataset in Sesam through an HTTP-endpoint and fetch them with an HTTP Get-request.
 
 
-### 7.5.1 Exposing datasets in Sesam
+### 7.5.1 Exposing datasets with HTTP-endpoint
 To expose a dataset from Sesam we create an HTTP-endpoint pipe in our Sesam node. Below is the configuration for a pipe called "person-crm-endpoint", which exposes the dataset 'person-crm'.
 
 **Replace the dataset** in the ```"source"``` with the dataset you want data from and **name the pipe** accordingly in the ```"_id"```. We recommend setting the ```"_id"``` of the pipe as "name-of-dataset-endpoint".
@@ -665,7 +669,7 @@ To expose a dataset from Sesam we create an HTTP-endpoint pipe in our Sesam node
 ```
 
 
-### 7.5.2 Client side data fetching
+### 7.5.2 Fetch data
 To get hold of the data we have exposed in our HTTP-endpoint we send HTTP Get-requests from our client. Provided below are templates for implementing this in Python, Java or C# .Net.
 
 
