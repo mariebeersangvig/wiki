@@ -35,7 +35,7 @@
 - [7.4 SQL sink example configuration](https://github.com/sesam-community/wiki/wiki/Getting-started#74-sql-sink-example-configuration)
 - [7.5 HTTP-endpoint and retrieving data](https://github.com/sesam-community/wiki/wiki/Getting-started#75-http-endpoint-and-retrieving-data)
 - [7.5.1 Exposing datasets with HTTP-endpoint](https://github.com/sesam-community/wiki/wiki/Getting-started#751-exposing-datasets-with-http-endpoint)
-- [7.5.2 Fetching data](https://github.com/sesam-community/wiki/wiki/Getting-started#752-fetching-data)
+- [7.5.2 Fetching data](https://github.com/sesam-community/wiki/wiki/Getting-started#752-fetch-data)
 
 #### [8. Microservices](https://github.com/sesam-community/wiki/wiki/Getting-started#8-microservices-1)
 - [8.1 Workflow](https://github.com/sesam-community/wiki/wiki/Getting-started#81-workflow)
