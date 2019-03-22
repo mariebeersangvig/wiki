@@ -642,6 +642,163 @@ Let's look at an example:
 This sink configuration creates an SQL table containing data from the ```"db-employee"``` dataset.
 
 ***
+## 7.5 HTTP-endpoint and retrieving the data
+We can expose the entities of a dataset in Sesam through an HTTP-endpoint and fetch them with an HTTP Get-request.
+
+
+### 7.5.1 Exposing datasets in Sesam
+To expose a dataset from Sesam we create an HTTP-endpoint pipe in our Sesam node. Below is the configuration for a pipe called "person-crm-endpoint", which exposes the dataset 'person-crm'.
+
+**Replace the dataset** in the ```"source"``` with the dataset you want data from and **name the pipe** accordingly in the ```"_id"```. We recommend setting the ```"_id"``` of the pipe as "name-of-dataset-endpoint".
+```
+{
+  "_id": "person-crm-endpoint",
+  "type": "pipe",
+  "source": {
+    "type": "dataset",
+    "dataset": "person-crm"
+  },
+  "sink": {
+    "type": "http_endpoint"
+  }
+}
+```
+
+
+### 7.5.2 Client side data fetching
+To get hold of the data we have exposed in our HTTP-endpoint we send HTTP Get-requests from our client. Provided below are templates for implementing this in Python, Java or C# .Net.
+
+
+####  Python
+We will use Python's HTTP library Requests. This can be installed by running ```pip install requests``` in our Python interpreter.
+```
+import requests
+
+url = "https://DATAHUB-URL.sesam.cloud/api/publishers/ENDPOINT-ID/entities"
+JWT = "YOUR-JWT-TOKEN"
+
+r = requests.get(url, headers={'Authorization': 'bearer '+JWT})
+entities = r.text
+
+print(entities)
+```
+
+
+#### Java
+We will use Apache HttpClient to create a GET request and will need the following Maven dependency:
+```
+<dependency>
+    <groupId>org.apache.httpcomponents</groupId>
+    <artifactId>httpclient</artifactId>
+    <version>4.5.4</version>
+</dependency>
+```
+Java class:
+```
+package sesam;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import org.apache.http.HttpResponse;
+import org.apache.http.client.methods.HttpGet;
+import org.apache.http.impl.client.CloseableHttpClient;
+import org.apache.http.impl.client.HttpClientBuilder;
+
+public class ApacheHttpClientGet {
+
+    public static void main(String[] args) throws IOException {
+
+        String entities = getEntities();
+        System.out.println(entities);
+    }
+
+    private static String getEntities() throws IOException {
+
+        try (CloseableHttpClient client = HttpClientBuilder.create().build()) {
+
+            String url = "https://DATAHUB-URL.sesam.cloud/api/publishers/ENDPOINT-ID/entities";
+            String JWT = "YOUR-JWT-TOKEN";
+
+            HttpGet request = new HttpGet(url);
+            request.addHeader("Authorization", "Bearer "+JWT);
+            HttpResponse response = client.execute(request);
+
+            if (response.getStatusLine().getStatusCode() != 200) {
+                // handle as preferred
+                return null;
+            }
+
+            BufferedReader bufReader = new BufferedReader(new InputStreamReader(
+                    response.getEntity().getContent()));
+
+            return bufReader.readLine();
+        }
+    }
+}
+```
+
+
+#### C# .Net
+```
+using System;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using System.Threading.Tasks;
+
+namespace Sesam
+{
+   class Program
+   {
+       static void Main(string[] args)
+       {
+           var entities = GetEntities().Result;
+           Console.WriteLine($"Entities: {entities}");
+           Console.ReadLine();
+       }
+
+       private static async Task<String> GetEntities()
+       {
+           var url = "https://DATAHUB-URL.sesam.cloud/";
+           var apiUrl = $"/api/publishers/ENDPOINT-ID/entities";
+           string jwt = "YOUR-JWT-TOKEN";
+
+           using (var client = new HttpClient() { BaseAddress = new Uri(url) })
+           {
+               client.BaseAddress = new Uri(url);
+               client.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+               client.DefaultRequestHeaders.Add("Authorization", $"Bearer {jwt}");
+
+               using (var response = await client.GetAsync(apiUrl))
+               {
+                   if (response.StatusCode == System.Net.HttpStatusCode.OK)
+                       return await response.Content.ReadAsStringAsync();
+
+                   else return null;
+               }
+           }
+       }
+   }
+}
+```
+
+
+#### Adaptation
+To make these code implementations work with our HTTP endpoint we have to replace the capitalized parts of the URL and the JWT-token creation.
+
+1. **Replace** ```DATAHUB-URL``` with the URL of our Sesam datahub. This URL is found just below the Sesam logo at the top-left corner of the page when logged into our node in the Sesam portal.
+
+2. **Replace** the ```ENDPOINT-ID``` part of the URL with the ```"_id"``` of the endpoint pipe we want data from.
+
+3. **Replace** ```YOUR-JWT-TOKEN``` with a JWT-token from our Sesam subscription. This is to provide authorization to access the HTTP-endpoint. The token is not retrievable through Sesam, but we might have already stored it somewhere for later use. We can find our JWT-token inside our .syncconfig-files if we have previously created these to support storing Sesam-configs locally. If we don't have access to our existing JWTs, we can create a new one in the Sesam portal under "Subscription" -> "JWT".
+
+- Optionally we can add ```?limit=x``` or ```?since=x``` to the end of the URL in our get-call. _Limit_ has to be an integer and specifies the maximum number of entities to get. Adding _since_ will give you only the entities that have a higher value of "_updated" than the value you give _since_. The "_updated" property of the entities are either an integer or a timestamp, but _since_ is treated as a string. When using _since_ to only fetch entities that have been added since our previous request, we need to keep track the "_updated" value of the last entity fetched client side to have it available for the next call.
+
+The complete URL could look like this: https://datahub-425aagcte.sesam.cloud/api/publishers/person-crm-httpendpoint/entities?since=255
+
+All of these templates provide the data from the HTTP endpoint as a JSON-formatted string object named ```entities```. We can now replace the printing of this string with our own implementation to make use of the data.
+
+***
 # 8 Microservices
 
 The DTL in Sesam is a powerful tool to transform our data. But sometimes we need to do something with our data that is outside the scope of the DTL. We can then create a microservice that does what we need and run it inside Sesam to serve those needs. We can also use a microservice when we need to connect to an external system where the connection point is not compatible with the Sesam source systems. The microservice can be made according to our preferrences and in any language.
