@@ -18,6 +18,6 @@ We're looking for more editors! Please contact one of the [current editors](http
 - [[Unmodified Dataset as Output]]
 - [[Naming Conventions]]
 
-## Integrating with
+## Integrations
 - [[BankID]]
 - [[Google Firebase]]
