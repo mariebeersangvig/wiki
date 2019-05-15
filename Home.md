@@ -19,5 +19,7 @@ We're looking for more editors! Please contact one of the [current editors](http
 - [[Naming Conventions]]
 
 ## Integrations
+- [[Sesam Connectors]]
+
 - [[BankID]]
 - [[Google Firebase]]
