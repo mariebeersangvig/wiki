@@ -94,10 +94,9 @@ _Hint: Look at the transform section of the "person-crm" pipe._
 Scope : Publishing data to CSV-endpoint
 
 * Create new pipe. Source from lab 6. Add transform and sink.​
-* 
 
 
-_Hint: Look Look [here](https://github.com/sesam-community/wiki/wiki/Getting-started#71-csv-endpoint-sink) for help_
+_Hint: Look [here](https://github.com/sesam-community/wiki/wiki/Getting-started#71-csv-endpoint-sink) for help_
 ***
 ## More labs
 
