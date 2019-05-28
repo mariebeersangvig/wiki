@@ -56,7 +56,7 @@ Scope: Hops
 * In the same pipe that we created in lab 3 we want to 'hop' to another dataset with the ```["hops"]``` function. 
 * Add a new property called difi-data. Inside the add, use ```["hops"]``` to join on the ```"zipcode"``` from azure-person OR ```"PostalCode"``` from crm-person with ```"postnummer"``` of "difi-postnummer".
 
-_Hint: Look up hops in the Getting started guide and the documentation. You will also find the "or" function in the documentation._
+_Hint: Look up hops in the Getting started guide, the "person-crm" pipe or the documentation. You will also find the "or" function in the documentation._
 ***
 ## Lab 5
 
@@ -67,7 +67,7 @@ Scope: Apply-hops
 * Try to use ```["apply-hops"]``` inside an ```["add"]``` and a ```["merge"]```. See any difference?
 
 
-_Hint: Look at the transform section of the "global-person" pipe._
+_Hint: Look at the transform section of the "person-crm" pipe._
 ***
 ## Lab 6
 
@@ -94,10 +94,10 @@ _Hint: Look at the transform section of the "person-crm" pipe._
 Scope : Publishing data to CSV-endpoint
 
 * Create new pipe. Source from lab 6. Add transform and sink.​
-* Look [here](https://github.com/sesam-community/wiki/wiki/Getting-started#71-csv-endpoint-sink) for help
+* 
 
 
-_Hint: Look at the "person-crm-endpoint" pipe._
+_Hint: Look Look [here](https://github.com/sesam-community/wiki/wiki/Getting-started#71-csv-endpoint-sink) for help_
 ***
 ## More labs
 
