@@ -22,7 +22,7 @@
 - [6.4 Hops](https://github.com/sesam-community/wiki/wiki/Getting-started#64-hops)
 - [6.4.1 Labs 4](https://github.com/sesam-community/wiki/wiki/Getting-started#641-labs-4)
 - [6.5 Apply-hops](https://github.com/sesam-community/wiki/wiki/Getting-started#65-apply-hops)
-- [6.5.1 Labs 5](https://github.com/sesam-community/wiki/wiki/Getting-started#6.51-labs-5)
+- [6.5.1 Labs 5](https://github.com/sesam-community/wiki/wiki/Getting-started#651-labs-5)
 - [6.5.2 Add or merge apply-hops?](https://github.com/sesam-community/wiki/wiki/Getting-started#652-should-i-add-or-merge-an-apply-hops)
 - [6.6 Labs 6](https://github.com/sesam-community/wiki/wiki/Getting-started#66-labs-6)
 #### [7 Sinks](https://github.com/sesam-community/wiki/wiki/Getting-started#sinks-1)
