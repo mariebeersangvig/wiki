@@ -1,4 +1,4 @@
-# Getting started with Sesams GDPR Platform
+# Getting started with Sesam's GDPR Platform
 
 # Table of contents
 #### [1 Introduction](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#1-introduction-1)
