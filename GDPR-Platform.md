@@ -1,6 +1,15 @@
 # Getting started with Sesams GDPR Platform
 
-# 1. Table of contents
+# Table of contents
+#### [1 Introduction](https://github.com/sesam-community/wiki/wiki/Getting-started#1-Introduction-1)
+#### [2 Glossary](https://github.com/sesam-community/wiki/wiki/Getting-started#2-Glossary-1)
+#### [3 Prerequisite for Installation](https://github.com/sesam-community/wiki/wiki/Getting-started#3-Prerequisite-for-Installation-1)
+#### [4 Setting up our Sesam node](https://github.com/sesam-community/wiki/wiki/Getting-started#4-Setting-up-our-Sesam-node-1)
+- [4.1 Sign up](https://github.com/sesam-community/wiki/wiki/Getting-started#41-sign-up)
+- [4.2 Import data](https://github.com/sesam-community/wiki/wiki/Getting-started#42-import-data)
+
+# 1. Introduction
+With Sesams GDPR Platform you can handle your company's GDPR responsibilities. This guide will show you how to set up processing of incoming data requests from the company's data subjects.
 
 # 2. Portal setup
 
