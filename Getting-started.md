@@ -27,7 +27,7 @@
 - [6.6 Labs 6](https://github.com/sesam-community/wiki/wiki/Getting-started#66-labs-6)
 #### [7 Sinks](https://github.com/sesam-community/wiki/wiki/Getting-started#sinks-1)
 - [7.1 CSV endpoint sink](https://github.com/sesam-community/wiki/wiki/Getting-started#71-CSV-endpoint-sink)
-- [7.2 Lab 7](https://github.com/sesam-community/wiki/wiki/Getting-started#72-lab-7)
+- [7.2 Labs 7](https://github.com/sesam-community/wiki/wiki/Getting-started#72-labs-7)
 - [7.3 SQL database to CSV file output step by step](https://github.com/sesam-community/wiki/wiki/Getting-started#73-SQL-database-to-CSV-file-output-step-by-step)
 - [7.3.1 Using secrets](https://github.com/sesam-community/wiki/wiki/Getting-started#731-using-secrets)
 - [7.3.2 Creating a table in the database](https://github.com/sesam-community/wiki/wiki/Getting-started#732-creating-a-table-in-the-database)
@@ -394,8 +394,8 @@ In the second example, instead of adding the ```["apply-hops"]```, we use ```["m
 Results:
 ![](https://github.com/simenjorgensen/training/blob/master/merge_applyhops.png)
 
-## 6.6 Lab 6
-Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-6) and do Lab 6.
+## 6.6 Labs 6
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-6) and do Labs 6.
 ***
 # 7 Sinks
 Sinks are at the receiving end of pipes and are responsible for writing entities into a internal dataset or a target system.
@@ -416,8 +416,8 @@ After creating a pipe with a CSV endpoint sink you can go to the "Output" tab of
 
 You can also download the output by copying the cURL and creating your .csv file in a CLI like curl or Git Bash. Paste the cURL into you CLI and add " > my_file.csv" at the end. This will create the file at your current location. You can remove the entity limit and get all entities by removing "?limit=X" from the curl.
 
-## 7.2 Lab 7
-Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-7) and do Lab 7.
+## 7.2 Labs 7
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-7) and do Labs 7.
 ***
 ## 7.3 SQL database to CSV file output step by step 
 
