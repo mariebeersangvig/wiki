@@ -316,8 +316,8 @@ There is also the function ```["apply-hops"]``` which is a combined ```["apply"]
 ```
 This will retrieve orders through the hops expression and then add them using the order transformation rule. The output is a dataset where the ID of all orders are added to the customers from the source dataset.
 
-### 6.5.1 Lab 5
-Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-5) and do Lab 5.
+### 6.5.1 Labs 5
+Go to the [Labs page](https://github.com/sesam-community/wiki/wiki/Labs#lab-5) and do Labs 5.
 ***
 
 ### 6.5.2 Should I "add" or "merge" an apply-hops?
