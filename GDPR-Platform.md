@@ -2,22 +2,22 @@
 
 # Table of contents
 #### [1 Introduction](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#1-introduction-1)
-#### [2 Portal Setup](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#2-portal-setup)
+#### [2 Portal Setup](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#2-portal-setup-1)
 - [2.1 Setting up](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#21-setting-up)
 - [2.2 Filling out the Excel template](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#22-filling-out-the-excel-template)
 - [2.3 Uploading file to portal](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#23-uploading-file-to-portal)
 - [2.4 Customize your portal](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#24-customize-your-portal)
-#### [3 Data access request](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#3-data-access-request)
+#### [3 Data access request](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#3-data-access-request-1)
 - [3.1 Request data](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#31-request-data)
 - [3.2 Request handling by system owner](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#32-request-handling-by-system-owner)
 - [3.3 Data subject can view data and execute their rights](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#33-data-subject-can-view-data-and-execute-their-rights)
-#### [4 Automation of data request handling](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#4-automation-of-data-request-handling)
+#### [4 Automation of data request handling](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#4-automation-of-data-request-handling-1)
 - [4.1 Import data](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#41-import-data)
 - [4.2 Purposes and data types](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#42-purposes-and-data-types)
 - [4.3 Update pre-built pipe](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#43-update-pre-built-pipe)
 - [4.4 Working with "Related" data type levels](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#44-working-with-related-data-type-levels)
-#### [5 Deletion or change requests](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#5-deletion-or-change-requests)
-#### [6 GDPR unstructured data handling](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#6-gdpr-unstructured-data-handling)
+#### [5 Deletion or change requests](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#5-deletion-or-change-requests-1)
+#### [6 GDPR unstructured data handling](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#6-gdpr-unstructured-data-handling-1)
 
 # 1. Introduction
 With Sesams GDPR Platform you can handle your company's GDPR responsibilities. This guide will show you how to set up processing of incoming data requests from the company's data subjects.
