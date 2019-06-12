@@ -1,5 +1,4 @@
-## Getting started with
-# Sesams GDPR Portal
+# Getting started with Sesams GDPR Portal
 
 # 1. Table of contents
 
