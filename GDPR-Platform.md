@@ -60,9 +60,7 @@ That's it! Your GDPR portal is all set.
 
 ## 3.1 Request data
 
-1. **The data subject can now log in** to your portal to request their data.
-
-The URL will be the one you chose in the setup process, for example yourcompany.sesamdata.com
+1. **The data subject can now log in** to your portal to request their data. The URL will be the one you chose in the setup process, for example yourcompany.sesamdata.com
 
 ![](https://github.com/simenjorgensen/training/blob/master/GDPR/login-GDPR.PNG)
 
