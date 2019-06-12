@@ -5,7 +5,8 @@ Sesam is an [extensible platform](https://docs.sesam.io/extension-points.html), 
 We're looking for more editors! Please contact one of the [current editors](https://github.com/orgs/sesam-community/people) if you want to help out.
 
 ## Getting started with Sesam
-- [Learn to use Sesam](https://github.com/sesam-community/wiki/wiki/Getting-started)
+- [Learn to use Sesam's integration platform](https://github.com/sesam-community/wiki/wiki/Getting-started)
+- [Learn to use Sesam's GDPR Platform](https://github.com/sesam-community/wiki/wiki/GDPR-Platform)
 
 ## Best practices
 - [[TDD]]
