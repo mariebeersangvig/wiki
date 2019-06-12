@@ -1,4 +1,4 @@
-# Getting started with Sesams GDPR Portal
+# Getting started with Sesams GDPR Platform
 
 # 1. Table of contents
 
@@ -116,7 +116,7 @@ When the data subject logs back in he or she can now **view their data** and **e
 
 - Right to restriction of processing (art. 18)
 
-# Automation of data request handling
+# 4. Automation of data request handling
 
 If we have an automatic version of the GDPR platform we can set it up so that it handles data access requests automatically. The data will be delivered to the data subject without human intervention. We can do this because we use the Sesam integration platform with our GDPR platform. Using the Sesam integration platform means we make a copy of all the data we want to make available for the GDPR platform into its Sesam datahub. Once the data is available in the datahub, the system can serve data access requests on it's own.
 
@@ -125,7 +125,7 @@ To set up this automation we need to take care of a few things:
 - Refer to the input pipes of our GDPR platform in our "GDPR setup data automated" excel sheet
 - Update a pre-built pipe
 
-## Import data
+## 4.1 Import data
 
 We have to copy all the data from our source systems that contain data that could be served to our data subjects. We can import this data from different types of sources like databases, APIs, CSV- or XML-files. We do this by creating "input pipes" that copy all the data from a source. The pipes connect to external sources through "systems" in Sesam, which serve connection strings, connection pooling, authentication etc. Take a look at our [Getting started with Sesam](https://github.com/sesam-community/wiki/wiki/Getting-started) guide to learn how to configure pipes and systems to connect to external data sources.
 
@@ -139,14 +139,14 @@ Create four new pipes and paste the configurations provided in the links below. 
 - [salesforce-task.json](https://github.com/simenjorgensen/training/blob/master/GDPR/salesforce-task.json?raw=true)
 
 
-## Purposes and data types
+## 4.2 Purposes and data types
 As we fill in the [excel sheet](https://docs.sesam.io/_downloads/GDPR%20setup%20data%20automated.xlsx) with purposes and data types we now also have to specify from which dataset the data is pulled. To do this we need to match the **rdf:type** in the pipes with the **TypeID** column in the excel file, like shown in the picture below:
 
 <img src="https://github.com/simenjorgensen/training/blob/master/GDPR/gdpr-excel-automated.png" width="720" height="210">
 
 We also need to specify the identifiers in the Excel file. These identifiers are what connects the data in the datasets to the data subject that is requesting their data. As you can see we have chosen **EmailAddress** in this example, but it could be almost anything. It could also be multiple identifiers separated by comma (no spaces).
 
-## Update pre-built pipe
+## 4.3 Update pre-built pipe
 1. Open pre-built pipe **custom-subject-data** and update this pipe with all our input datasets. Here we add four datasets **salesforce-contact**, **salesforce-eventrelation**, **salesforce-lead** and **salesforce-task** as our sources. After updating the pipe it should look like this:
 
 ```{
@@ -167,7 +167,7 @@ We also need to specify the identifiers in the Excel file. These identifiers are
 3. That's it! We can now make a request as a data subject using our GDPR portal for the related data stored with the company.
 
 
-### Working with "Related" data type levels:
+## 4.4 Working with "Related" data type levels:
 1. Until now we are able to fetch data based on "Personal" data type level for corresponding identifier.
 Now we will see how related data also gets fetched using "Related" data type level.
 To test this functionality, we have now added a new row for "Related" data type level in our excel sheet as showing below.
@@ -195,7 +195,7 @@ To test this functionality, we have now added a new row for "Related" data type 
 ```
 4. That's it. You can now make the request and will be able to see all the personal data as well as related data. Make sure you run all the pipes after resetting it to get latest change. 
 
-# Deletion or change requests
+# 5. Deletion or change requests
 
 The data subject has the right to be forgotten (deleted) or have their data rectified (changed). To support rectification of data you will have to set up the GDPR data access portal to allow for it. You can read about how to do that in the [databrowser guide](https://docs.sesam.io/databrowser-guide.html).
 
@@ -203,6 +203,6 @@ When a deletion or change request is submitted to a manually updated GDPR platfo
 
 For an automated GDPR platform it is possible to process change and deletion requests automatically by triggering changes or deletions directly in the source systems. See the [GDPR platform developer documentation](https://docs.sesam.io/gdpr-platform-developer-docs.html#gdpr-platform-developer-docs) for information about automation and the APIs offered for implementing such a mechanism.
 
-# GDPR unstructured data handling
+# 6. GDPR unstructured data handling
 
 Up to this point we have been working with "structured" data. However, data is not always going to be structured in the real world. Fortunately, Sesam GDPR node also supports handling of GDPR unstructured data. Visit [GDPR unstructured data support](https://docs.sesam.io/gdpr-platform-developer-docs.html#gdpr-unstructured-data) to learn more about this.
