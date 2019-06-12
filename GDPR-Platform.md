@@ -1,7 +1,7 @@
 # Getting started with Sesams GDPR Platform
 
 # Table of contents
-#### [1 Introduction](https://github.com/sesam-community/wiki/wiki/Getting-started#1-Introduction-1)
+#### [1 Introduction](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#1-introduction-1)
 #### [2 Glossary](https://github.com/sesam-community/wiki/wiki/Getting-started#2-Glossary-1)
 #### [3 Prerequisite for Installation](https://github.com/sesam-community/wiki/wiki/Getting-started#3-Prerequisite-for-Installation-1)
 #### [4 Setting up our Sesam node](https://github.com/sesam-community/wiki/wiki/Getting-started#4-Setting-up-our-Sesam-node-1)
