@@ -176,7 +176,7 @@ Create four new pipes and paste the configurations provided in the links below. 
 ## 4.2 Link data to data subjects
 In our data type definitions we now also have to specify from which dataset the data is pulled. To do this we need to create and populate two extra fields in our data type definitions: "TypeID" and "Identifiers" . We can do this as we create the data types or we can edit them at a later time.
 
-The "**TypeID**" field needs to have a value matching the **rdf:type** of the data, while the "**Identifiers**" field needs to contain the namespace and identifier of the attribute of the data we refer to in the data type definitions. See the image below for reference:
+The "**TypeID**" field needs to have a value matching the **rdf:type** of the data, while the "**Identifiers**" field needs to contain the **namespace and identifier** of the attribute of the data we refer to in the data type definitions. See the image below for reference:
 
 ![lnk to data in data type definition](https://github.com/sesam-community/wiki/blob/master/gdpr%20img/data%20type%20for%20automation.png)
 
