@@ -5,7 +5,7 @@
 #### [2 Portal Setup](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#2-portal-setup-1)
 - [2.1 Setting up](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#21-setting-up)
 - [2.2 Establishing what we have and why](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#22-establishing-what-we-have-and-why)
-- [2.2.1 Purposes](https://https://github.com/sesam-community/wiki/wiki/GDPR-Platform#221-purposes)
+- [2.2.1 Purposes](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#221-purposes)
 - [2.2.2 Data types](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#222-data-types)
 - [2.2.3 Excel sheet alternative for data types and purposes](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#223-excel-sheet-alternative-for-data-types-and-purposes)
 - [2.4 Customize your portal](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#24-customize-your-portal)
