@@ -4,8 +4,10 @@
 #### [1 Introduction](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#1-introduction-1)
 #### [2 Portal Setup](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#2-portal-setup-1)
 - [2.1 Setting up](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#21-setting-up)
-- [2.2 Filling out the Excel template](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#22-filling-out-the-excel-template)
-- [2.3 Uploading file to portal](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#23-uploading-file-to-portal)
+- [2.2 Establishing what we have and why](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#22-establishing-what-we-have-and-why)
+- [2.2.1 Purposes](https://https://github.com/sesam-community/wiki/wiki/GDPR-Platform#221-purposes)
+- [2.2.2 Data types](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#222-data-types)
+- [2.2.3 Excel sheet alternative for data types and purposes](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#223-excel-sheet-alternative-for-data-types-and-purposes)
 - [2.4 Customize your portal](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#24-customize-your-portal)
 #### [3 Data access request](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#3-data-access-request-1)
 - [3.1 Request data](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#31-request-data)
@@ -13,7 +15,7 @@
 - [3.3 Data subject can view data and execute their rights](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#33-data-subject-can-view-data-and-execute-their-rights)
 #### [4 Automation of data request handling](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#4-automation-of-data-request-handling-1)
 - [4.1 Import data](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#41-import-data)
-- [4.2 Purposes and data types](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#42-purposes-and-data-types)
+- [4.2 Link data to data subject](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#42-link-data-to-data-subjects)
 - [4.3 Update pre-built pipe](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#43-update-pre-built-pipe)
 - [4.4 Working with "Related" data type levels](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#44-working-with-related-data-type-levels)
 #### [5 Deletion or change requests](https://github.com/sesam-community/wiki/wiki/GDPR-Platform#5-deletion-or-change-requests-1)
@@ -47,26 +49,40 @@ With Sesams GDPR Platform you can handle your company's GDPR responsibilities. T
 
 The domain name is the internet address (DNS name) where your GDPR data access portal should be available to the users (data subjects in GDPR lingo). You can choose any name you want, as long as it's not already in use by someone else. Your GDPR data access portal will then be available on the web (e.g. https://your-selected-name.sesamdata.com).
 
+## 2.2 Establishing what we have and why
+You need to identify what are your systems, which types of personal data are in those systems and what purposes gives you the right to have the personal data. 
 
-7. Click on [Learn more](https://docs.sesam.io/gdpr-data-types-purposes-configuration.html) and download the Excel file. 
+### 2.2.1 Purposes
+Navigate to the Purposes tab and create populate it with your purposes for having the data in your systems. The creation webform provides explanations for what each field represents. Below is an image of the purpose creation template. Make sure to fill in all fields marked with a star (*).
+![purpose creation webform](https://github.com/sesam-community/wiki/blob/master/gdpr%20img/purpose%20creation.png?raw=true)
+
+When a data access request has been processed the purpose is displayed to the data subject like in the following image:
+![purpose as displayed to the data subject](https://github.com/sesam-community/wiki/blob/master/gdpr%20img/purpose%20displayed.png?raw=true)
+
+### 2.2.2 Data types
+Next, go to Data Types and fill in the data you have in your systems. Make sure to fill in all fields marked with a star (*). In the "Purposes" field you select the purposes you have created that apply to the data in question. The email-address(es) supplied in "Contact" will receive an email when somebody makes a request for this data.
+![data type creation webform](https://github.com/sesam-community/wiki/blob/master/gdpr%20img/data%20type%20creation.png?raw=true)
+
+The data related to the data subject can then be displayed like this when a data access request is served:
+![data type as shown to the data subject](https://github.com/sesam-community/wiki/blob/master/gdpr%20img/data%20type%20displayed.png?raw=true)
+
+### 2.2.3 Excel-sheet alternative for data types and purposes
+
+Alternatively you can choose to upload the purposes and data types from an Excel-sheet. The sheet will have to contain the same info as you would input through the Sesam portal user interface.
+
+#### Filling out the Excel template
+1. Go to [this URL](https://docs.sesam.io/gdpr-data-types-purposes-configuration.html) and download the Excel file in the "GDPR Excel setup template file" link. 
 
 ![GDPR excel](https://github.com/simenjorgensen/training/blob/master/GDPR_download_excel.gif)
 
-
-
-## 2.2 Filling out the Excel template
-
-1. Fill in the **Purposes and Datatypes**. There are examples for you to follow. 
-Remember to fill in the contact information for the person responsible for each system. This contact will receive a mail when somebody asks for request. 
-
-2. What you really need to identify your systems, which types of personal data are in those systems and what purposes gives you the right to have the personal data.
+2. Fill in the **GDPR setup data** Excel template. There are examples in it for you to follow. Please note that there are three sheets in the file. Remember to fill in the contact information for the person responsible for the data in each system.
 <img src="https://github.com/simenjorgensen/training/blob/master/GDPR/excel-GDPR%20setup%20data.PNG" width="650" height="370">
 
-## 2.3 Uploading file to portal
+#### Uploading Excel-file to portal
 
-1. Navigate to **GDPR** in the left column. 
+1. Navigate to **GDPR** in the left column and then to **Setup**. 
 
-2. **Upload** the GDPR setup data Excel file after you have filled-in the necessary information. 
+2. **Upload** the GDPR setup data Excel file in the **Upload data type template** section after you have filled in the necessary information. 
 <img src="https://github.com/simenjorgensen/training/blob/master/GDPR/excel-upload.PNG" width="650" height="370">
 
 ## 2.4 Customize your portal
@@ -139,17 +155,17 @@ When the data subject logs back in he or she can now **view their data** and **e
 If we have an automatic version of the GDPR platform we can set it up so that it handles data access requests automatically. The data will be delivered to the data subject without human intervention. We can do this because we use the Sesam integration platform with our GDPR platform. Using the Sesam integration platform means we make a copy of all the data we want to make available for the GDPR platform into its Sesam datahub. Once the data is available in the datahub, the system can serve data access requests on it's own.
 
 To set up this automation we need to take care of a few things:
-- Import data from our data systems to the datahub of the GDPR platform
-- Refer to the input pipes of our GDPR platform in our "GDPR setup data automated" excel sheet
-- Update a pre-built pipe
+- **Import data** from our data systems to the datahub of the GDPR platform
+- **Refer to the datasets** in the datahub in our data type definitions
+- **Update** a pre-built pipe
 
 ## 4.1 Import data
 
 We have to copy all the data from our source systems that contain data that could be served to our data subjects. We can import this data from different types of sources like databases, APIs, CSV- or XML-files. We do this by creating "input pipes" that copy all the data from a source. The pipes connect to external sources through "systems" in Sesam, which serve connection strings, connection pooling, authentication etc. Take a look at our [Getting started with Sesam](https://github.com/sesam-community/wiki/wiki/Getting-started) guide to learn how to configure pipes and systems to connect to external data sources.
 
-For testing purposes We have pre-made a few pipe configurations with embedded test data. We can use these pipes to setup and test the automation with some dummy data before connecting to our real data sources.
+For testing purposes we have pre-made a few pipe configurations with embedded test data. We can use these pipes to setup and test the automation with dummy data before connecting to our real data sources.
 
-Create four new pipes and paste the configurations provided in the links below. We change the values of the first entity of the embedded data in these configs to match our own email address so that we can test the platform as a data subject ourselves.
+Create four new pipes and paste the configurations provided in the links below. We can change the values of the first entity of the embedded data in these configs to match our own email address. That way we can test the platform as a data subject ourselves.
 
 - [salesforce-contact.json](https://github.com/simenjorgensen/training/blob/master/GDPR/salesforce-contact.json?raw=true)
 - [salesforce-eventrelation.json](https://github.com/simenjorgensen/training/blob/master/GDPR/salesforce-eventrelation.json?raw=true)
@@ -157,12 +173,17 @@ Create four new pipes and paste the configurations provided in the links below. 
 - [salesforce-task.json](https://github.com/simenjorgensen/training/blob/master/GDPR/salesforce-task.json?raw=true)
 
 
-## 4.2 Purposes and data types
-As we fill in the [excel sheet](https://docs.sesam.io/_downloads/GDPR%20setup%20data%20automated.xlsx) with purposes and data types we now also have to specify from which dataset the data is pulled. To do this we need to match the **rdf:type** in the pipes with the **TypeID** column in the excel file, like shown in the picture below:
+## 4.2 Link data to data subjects
+In our data type definitions we now also have to specify from which dataset the data is pulled. To do this we need to create and populate two extra fields in our data type definitions: "TypeID" and "Identifiers" . We can do this as we create the data types or we can edit them at a later time.
 
-<img src="https://github.com/simenjorgensen/training/blob/master/GDPR/gdpr-excel-automated.png" width="720" height="210">
+The "**TypeID**" field needs to have a value matching the **rdf:type** of the data, while the "**Identifiers**" field needs to contain the namespace and identifier of the attribute of the data we refer to in the data type definitions. See the image below for reference:
 
-We also need to specify the identifiers in the Excel file. These identifiers are what connects the data in the datasets to the data subject that is requesting their data. As you can see we have chosen **EmailAddress** in this example, but it could be almost anything. It could also be multiple identifiers separated by comma (no spaces).
+![lnk to data in data type definition](https://github.com/sesam-community/wiki/blob/master/gdpr%20img/data%20type%20for%20automation.png)
+
+These identifiers are what connects the data in the datasets to the data subject that is requesting their data. As you can see we have chosen **EmailAddress** in this example, but it could be almost anything. It could also be multiple identifiers separated by comma (no spaces).
+
+### Excel file data type definition alternative
+If we wish to use an Excel file instead of the portal user interface to upload data types we then have to use [this Excel template](https://docs.sesam.io/_downloads/GDPR%20setup%20data%20automated.xlsx). In this template we need to populate the same two fields as described above.
 
 ## 4.3 Update pre-built pipe
 1. Open pre-built pipe **custom-subject-data** and update this pipe with all our input datasets. Here we add four datasets **salesforce-contact**, **salesforce-eventrelation**, **salesforce-lead** and **salesforce-task** as our sources. After updating the pipe it should look like this:
