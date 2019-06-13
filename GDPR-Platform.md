@@ -180,7 +180,7 @@ The "**TypeID**" field needs to have a value matching the **rdf:type** of the da
 
 ![lnk to data in data type definition](https://github.com/sesam-community/wiki/blob/master/gdpr%20img/data%20type%20for%20automation.png)
 
-These identifiers are what connects the data in the datasets to the data subject that is requesting their data. As you can see we have chosen **EmailAddress** in this example, but it could be almost anything. It could also be multiple identifiers separated by comma (no spaces).
+These identifiers are what connects the data in the datasets to the data subject that is requesting their data. As you can see we have chosen **EmailAddress** in this example, but other attributes may be as-well or better suited for identifying data subjects. It could also be multiple identifiers separated by comma (no spaces).
 
 ### Excel file data type definition alternative
 If we wish to use an Excel file instead of the portal user interface to upload data types we then have to use [this Excel template](https://docs.sesam.io/_downloads/GDPR%20setup%20data%20automated.xlsx). In this template we need to populate the same two fields as described above.
