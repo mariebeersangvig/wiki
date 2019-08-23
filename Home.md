@@ -24,3 +24,5 @@ We're looking for more editors! Please contact one of the [current editors](http
 
 - [[BankID]]
 - [[Google Firebase]]
+- [[Power BI]]
+- [[Azure Machine Learning Studio]]
