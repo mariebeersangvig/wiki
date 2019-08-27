@@ -8,6 +8,8 @@ Sesam provides a powerful operational pattern for Machine Learning. This example
 # Overview of the pattern
 Sesam enables organisations to integrate systems using data driven architecture. The entity datasets created by this process are rich in context and contain both the state of an entity in each system, and a defined master record. The data is strongly namespaced yet schemaless so as to maintain the original state of the data entity along with the merged and shaped version. This setup lends itself very well to the requirements for both training and operationalizing Machine Learning.
 
+![Sesam AMLS](https://github.com/sesam-community/wiki/raw/master/pictures/Sesam%20-%20Azure%20Machine%20Learning%20Studio.png "Sesam Azure Machine Learning Architecture")
+
 # Training Data
 A training data set can be provided by re-using a global dataset or perhaps combining some datasets. A Sesam pipe is setup to do shaping task, and is provided by a publisher endpoint to the machine learning system. In this example we use AMLS, and provide data to it using the CSV published endpoint.
 
