@@ -1,6 +1,10 @@
 ## Integrating with Azure Machine Learning Studio
 
-Sesam provides a powerful operational pattern for Machine Learning. This example integrates with Azure Machine Learning Studio for both providing training data, and also operationationalising models via a webservice.
+Machine learning (ML) is limited by the quality and amount of relevant data readily available for modelling and scoring.  The required data preparation effort is time consuming and expensive, quickly consuming allocated project resources. Not having enough data, not having the right data or even having too much of the wrong data is proven to be a significant barrier to delivering tangible business value when adopting of ML.
+
+Sesam’s unique data driven architecture enables the rapid uptake of ML in the organization by quickly and simply facilitating the required data and systems integrations.
+
+Sesam provides operational patterns for both training and operating ML models. With the increased agility provided by Sesam’s in built tools, data from all your enterprise systems can be powerfully combined, shaped and transformed into rich contextual feature sets and quickly delivered to directly modelling and scoring algorithms. This reduces the time and complexity usually required to deliver relevant business value.
 
 # About Azure Machine Learning Studio (AMLS)
 - [Azure Machine Learning Studio](https://studio.azureml.net/?selectAccess=true&o=1#)
